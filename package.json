@@ -1,0 +1,29 @@
+{
+  "name": "image-favour",
+  "version": "1.0.0",
+  "description": "NextJS front end and NodeJS back end developement for the image favourite options and more",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milankarunarathne/image-favour.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milankarunarathne/image-favour/issues"
+  },
+  "homepage": "https://github.com/milankarunarathne/image-favour#readme"
+}
