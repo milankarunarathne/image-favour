@@ -1,6 +1,9 @@
+import Navbar from '../components/Navbar';
+
 const Index = () => (
     <div>
-      <p>This is home page</p>
+        <Navbar/>
+        <p>This is home page</p>
     </div>
   );
   
