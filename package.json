@@ -4,6 +4,7 @@
   "description": "NextJS front end and NodeJS back end developement for the image favourite options and more",
   "main": "index.js",
   "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.7",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
