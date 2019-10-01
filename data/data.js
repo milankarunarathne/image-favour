@@ -6,7 +6,7 @@ export default () => {
                 price: 'AED 500',
                 likes: 32,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#airpods #apple #mobile phones # wireless",
                 image: 'N22732308A_1.jpg',
                 favourite: true
             },
@@ -16,7 +16,7 @@ export default () => {
                 price: 'AED 100',
                 likes: 22,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#titan #watch #jewellery # lady watch",
                 image: 'N23348011A_1.jpg',
                 favourite: false
             },
@@ -26,17 +26,17 @@ export default () => {
                 price: 'AED 300',
                 likes: 332,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#home tool #vaccum #electrical item ",
                 image: 'N24753374A_1.jpg',
                 favourite: true
             },
             {
                 id:4,
-                name: 'PS4',
-                price: 'AED 500',
-                likes: 31,
+                name: 'CTR Game',
+                price: 'AED 40',
+                likes: 531,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#game #PS4 #animation",
                 image: 'N27057326A_1.jpg',
                 favourite: true
             },
@@ -46,7 +46,7 @@ export default () => {
                 price: 'AED 900',
                 likes: 12,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#earbuds #bose #wireless #handfree",
                 image: 'N28808635A_1.jpg',
                 favourite: false
             },
@@ -56,7 +56,7 @@ export default () => {
                 price: 'AED 200',
                 likes: 23,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#nike #shoes #kids shoes #casual",
                 image: 'N28965275V_1.jpg',
                 favourite: true
             },
@@ -66,7 +66,7 @@ export default () => {
                 price: 'AED 2500',
                 likes: 62,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#phone #samsung #mobile phones #note",
                 image: 'N29004760A_1.jpg',
                 favourite: true
             },
@@ -76,7 +76,7 @@ export default () => {
                 price: 'AED 4700',
                 likes: 91,
                 discription: 'This is good product',
-                hashtags: "#phone #cases #mobile phones # macbookpro",
+                hashtags: "#phone #11pro #mobile phones #latest",
                 image: 'N29898024A_1.jpg',
                 favourite: false
             }
