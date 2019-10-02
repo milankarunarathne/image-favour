@@ -1,27 +1,50 @@
-import { FaHome } from 'react-icons/fa';
-import { FaRegHeart } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+import { FaHeart, FaHome } from 'react-icons/fa';
 import Link from 'next/link';
 
 
 class Navbar extends React.Component {
-  render() {
-    return (<div>
+    constructor(props){
+        super(props);
+    }
+
+    render() {
+        const isMobile = this.props.isMobile;
+        return (
+            <div style={{display: "flex", flexDirection: "row", backgroundColor: 'rgba(255, 33, 149, 1)', padding: 10, ...this.props.style}}>
                 <Link href="/">
-                    <FaHome 
-                        color="#ff2394"
-                        size="50px"
-                        style={{ margin: '0 5px' }}    
-                    />
+                    <div style={{display: "flex", flex: 1, flexDirection: "row"}}>
+                        <FaHome 
+                            color="#ffffff"
+                            size="50px"
+                            style={{ margin: '0 5px' }}    
+                        />
+                        {!isMobile && <div><h2>Home</h2></div>}
+                    </div>
                 </Link>
                 <Link href="/favourite">
-                    <FaRegHeart
-                        color="#ff2394"
-                        size="50px"
-                        style={{ margin: '0 5px' }}    
-                    />
+                    <div style={{display: "flex", flex: 1, flexDirection:"row"}}>
+                        <FaHeart
+                            color="#ffffff"
+                            size="50px"
+                            style={{ margin: '0 5px' }}    
+                        />
+                        {!isMobile && <div><h2>Favorite</h2></div>}
+                    </div>
                 </Link>
-            </div>);
-  }
+                <style jsx>
+                    {`
+                        h2 { color: #b6b6b6;}
+                    `}
+                </style>
+            </div>
+        );
+    }
 }
+
+Navbar.proTypes = {
+    isMobile: PropTypes.bool,
+    style: PropTypes.object,
+};
 
 export default Navbar;
