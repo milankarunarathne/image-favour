@@ -1,7 +1,7 @@
 export default () => {
     return [
             {
-                id: 1,
+                id: 'item_1',
                 name: 'Airpod',
                 price: 'AED 500',
                 likes: 32,
@@ -11,7 +11,7 @@ export default () => {
                 favourite: true
             },
             {
-                id:2,
+                id:'item_2',
                 name: 'Lady Watch',
                 price: 'AED 100',
                 likes: 22,
@@ -21,7 +21,7 @@ export default () => {
                 favourite: false
             },
             {
-                id:3,
+                id:'item_3',
                 name: 'Vaccum Cleaner',
                 price: 'AED 300',
                 likes: 332,
@@ -31,7 +31,7 @@ export default () => {
                 favourite: true
             },
             {
-                id:4,
+                id:'item_4',
                 name: 'CTR Game',
                 price: 'AED 40',
                 likes: 531,
@@ -41,7 +41,7 @@ export default () => {
                 favourite: true
             },
             {
-                id:5,
+                id:'item_5',
                 name: 'Earbuds',
                 price: 'AED 900',
                 likes: 12,
@@ -51,7 +51,7 @@ export default () => {
                 favourite: false
             },
             {
-                id:6,
+                id:'item_6',
                 name: 'Nike',
                 price: 'AED 200',
                 likes: 23,
@@ -61,7 +61,7 @@ export default () => {
                 favourite: true
             },
             {
-                id:7,
+                id:'item_7',
                 name: 'Samsung Note',
                 price: 'AED 2500',
                 likes: 62,
@@ -71,7 +71,7 @@ export default () => {
                 favourite: true
             },
             {
-                id:8,
+                id:'item_8',
                 name: 'iPhone 11 Pro',
                 price: 'AED 4700',
                 likes: 91,
