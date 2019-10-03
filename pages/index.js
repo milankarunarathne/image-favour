@@ -62,20 +62,24 @@ class Index extends React.Component {
                     .card{
                         
                         //flex-direction: column;
-                        width: 90%;
+                        width: 94%;
                         float: left;
                         margin: 2% 2% 10px 2%;
-                        //font-size: 1.6rem;
+                        //font-size: 1.1em;
                         //height: 400px;
                         background: var(--white);
                         //color: #AD0044;
-                        box-shadow: -12px 16px 75px -27px rgba(0,0,0,1);
-                        margin-left: 40px;
-                        margin-right: 40px;
+                        box-shadow: -12px 16px 75px -12px rgba(0,0,0,1);
+                        margin-left: 3%;
+                        margin-right: 3%;
                         margin-top: 110px;
-                        overflow: auto;
+                        overflow: hidden;
+                        font-family: sans-serif;
                     }
 
+                    .desktop{
+                        font-family: sans-serif;
+                    }
                 `}</style>
             </div>
         );

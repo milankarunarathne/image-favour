@@ -4,15 +4,15 @@ const IndexButtonBar = ({ favourite }) => {
     return favourite ?
         (
             <FaHeart
-                color="#ff2394"
-                size="25px"
-                style={{ margin: '0 1em' }}
+                color="#e61177"
+                size="30px"
+               //style={{ margin: '1 1em'}}
             />
         ) : (
             <FaRegHeart
-                color="#ff2394"
-                size="25px"
-                style={{ margin: '0 1em' }}
+                color="#ffffff"
+                size="30px"
+              //  style={{ margin: '0 1em' }}
             />
         )
 }
