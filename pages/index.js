@@ -1,4 +1,5 @@
 import { Card, Navbar } from '../components';
+import fetch from 'isomorphic-unfetch';
 
 class Index extends React.Component {
     constructor(props) {
@@ -7,9 +8,9 @@ class Index extends React.Component {
     }
 
     static async getInitialProps({ req }) {
-        // const res = await fetch('https://api.github.com/repos/zeit/next.js')
-        // const json = await res.json()
-        return { name: 'home' }
+        const res = await fetch('http://localhost:3000/api/cards')
+        const json = await res.json()
+        return { items: json }
     }
 
     async updateItems() {
@@ -19,14 +20,18 @@ class Index extends React.Component {
     }
 
     async componentDidMount() {
-        await this.updateItems()
+        await this.updateItems();
     }
 
-    async handleFavorite(id, isFavorite) {
-        console.log(`handle favorite: ${id}, ${isFavorite}`);
+    async handleFavorite(id, isFavourite) {
+        console.log(`handle favorite: ${id}, ${isFavourite}`);
         const res = await fetch('http://localhost:3000/api/card/' + id, {
             method: 'PUT',
-            body: { isFavorite },
+            // headers: {
+            //     'Accept': 'application/json',
+            //     'Content-Type': 'application/json'
+            //   },
+            body: {isFavourite},
         });
         const json = await res.json();
         console.log('updated: ', json);
@@ -41,7 +46,7 @@ class Index extends React.Component {
                 </div>
                 <div className="card">
                 {
-                    this.state.items.map((item) => <Card key={item.id} data={item} handleFavorite={(id, isFavorite) => this.handleFavorite(id, isFavorite)} />)
+                    this.state.items.map((item) => <Card key={item.id} data={item} handleFavorite={(id, isFavourite) => this.handleFavorite(id, isFavourite)} />)
                 }
                 </div>
                 <div className="mobile">

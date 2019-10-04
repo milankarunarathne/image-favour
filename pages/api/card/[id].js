@@ -11,10 +11,13 @@ export default (req, res) => {
         case 'GET':
             // Get data from database
             res.status(200).json(db.getCard(id));
+            //console.log(`work get ${req.body.isFavourite}`);
             break
         case 'PUT':
             // Update or create data in database
-            res.status(200).json(db.updateCard(id, req.body.isFavorite));
+            res.status(200).json(db.updateCard(id, req.body.isFavourite));
+            console.log(`work put ${req.body.isFavourite}`);
+            
             break
         default:
             res.setHeader('Allow', ['GET', 'PUT']);

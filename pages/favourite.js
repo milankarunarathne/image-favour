@@ -23,11 +23,11 @@ class Index extends React.Component {
         await this.updateItems()
     }
 
-    async handleFavorite(id, isFavorite) {
-        console.log(`handle favorite: ${id}, ${isFavorite}`);
+    async handleFavorite(id, isFavourite) {
+        console.log(`handle favorite: ${id}, ${isFavourite}`);
         const res = await fetch('http://localhost:3000/api/card/' + id, {
             method: 'PUT',
-            body: { isFavorite },
+            body: { isFavourite },
         });
         const json = await res.json();
         console.log('updated: ', json);
@@ -42,7 +42,7 @@ class Index extends React.Component {
                 </div>
                 <div className="card">
                 {
-                    this.state.items.map((item) => <Card key={item.id} data={item} handleFavorite={(id, isFavorite) => this.handleFavorite(id, isFavorite)} />)
+                    this.state.items.map((item) => <Card key={item.id} data={item} handleFavorite={(id, isFavourite) => this.handleFavorite(id, isFavourite)} />)
                 }
                 </div>
                 <div className="mobile">
