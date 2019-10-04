@@ -26,12 +26,11 @@ class Index extends React.Component {
     async handleFavorite(id, isFavourite) {
         console.log(`handle favorite: ${id}, ${isFavourite}`);
         const res = await fetch('http://localhost:3000/api/card/' + id, {
+            headers: {
+                'Content-Type': 'application/json'
+              },
             method: 'PUT',
-            // headers: {
-            //     'Accept': 'application/json',
-            //     'Content-Type': 'application/json'
-            //   },
-            body: {isFavourite},
+            body: JSON.stringify({ 'isFavourite': isFavourite }),
         });
         const json = await res.json();
         console.log('updated: ', json);
